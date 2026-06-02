@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% block title %}LearnSphere | Master In-Demand Skills{% endblock %}
+{% block content %}
+<section class="hero-section animated-gradient">
+  <div class="container">
+    <div class="row align-items-center min-vh-100 g-5">
+      <div class="col-lg-6" data-animate="fade-up">
+        <span class="eyebrow"><i class="fa-solid fa-bolt"></i> Learn faster with expert-led paths</span>
+        <h1>Build job-ready skills with courses designed for real growth.</h1>
+        <p class="hero-copy">Join live cohorts, hands-on projects, mentor reviews, and guided learning tracks across technology, business, design, and data.</p>
+        <div class="hero-actions">
+          <a href="{% url 'courses' %}" class="btn btn-gradient btn-lg ripple-btn">Explore courses</a>
+          <a href="{% url 'course_details' %}" class="btn btn-video btn-lg"><i class="fa-solid fa-play"></i> Watch preview</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>4.9/5</strong><span>Student rating</span></div>
+          <div><strong>92k+</strong><span>Active learners</span></div>
+          <div><strong>180+</strong><span>Career tracks</span></div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-animate="zoom-in">
+        <div class="hero-visual floating">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1100&q=80" alt="Students collaborating in an online learning session">
+          <div class="glass-card hero-card hero-card-top">
+            <i class="fa-solid fa-chart-line"></i>
+            <div><strong>76%</strong><span>Average course progress this week</span></div>
+          </div>
+          <div class="glass-card hero-card hero-card-bottom">
+            <div class="avatar-stack">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Student">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Student">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=120&q=80" alt="Student">
+            </div>
+            <span>Live mentor room starts in 12 min</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="section-heading" data-animate="fade-up">
+      <span class="eyebrow">Featured Courses</span>
+      <h2>Popular learning paths</h2>
+      <p>High-impact courses with projects, quizzes, community support, and completion certificates.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4" data-animate="fade-up">
+        <article class="course-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Web development workspace">
+          <div class="course-body">
+            <div class="course-meta"><span>Development</span><span><i class="fa-solid fa-star"></i> 4.9</span></div>
+            <h3>Full Stack Web Development</h3>
+            <p>HTML, CSS, JavaScript, Django, APIs, and deployment in one practical track.</p>
+            <div class="course-footer"><strong>$59</strong><a href="{% url 'course_details' %}">View details</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4" data-animate="fade-up">
+        <article class="course-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Analytics dashboard">
+          <div class="course-body">
+            <div class="course-meta"><span>Data</span><span><i class="fa-solid fa-star"></i> 4.8</span></div>
+            <h3>Data Analytics Bootcamp</h3>
+            <p>Python, SQL, dashboards, storytelling, and portfolio-ready analytics projects.</p>
+            <div class="course-footer"><strong>$69</strong><a href="{% url 'course_details' %}">View details</a></div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-xl-4" data-animate="fade-up">
+        <article class="course-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Business strategy meeting">
+          <div class="course-body">
+            <div class="course-meta"><span>Business</span><span><i class="fa-solid fa-star"></i> 4.7</span></div>
+            <h3>Product Strategy Masterclass</h3>
+            <p>Market research, roadmaps, experiments, pricing, and stakeholder communication.</p>
+            <div class="course-footer"><strong>$49</strong><a href="{% url 'course_details' %}">View details</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad soft-band">
+  <div class="container">
+    <div class="section-heading" data-animate="fade-up">
+      <span class="eyebrow">Top Instructors</span>
+      <h2>Learn from industry mentors</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-animate="slide-up"><div class="instructor-card"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Instructor Maya Rao"><h3>Maya Rao</h3><p>Senior UX Lead</p><span>42k students</span></div></div>
+      <div class="col-md-4" data-animate="slide-up"><div class="instructor-card"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=500&q=80" alt="Instructor Daniel Kim"><h3>Daniel Kim</h3><p>Cloud Architect</p><span>35k students</span></div></div>
+      <div class="col-md-4" data-animate="slide-up"><div class="instructor-card"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Instructor Sara Williams"><h3>Sara Williams</h3><p>Data Science Coach</p><span>51k students</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div id="testimonialCarousel" class="carousel slide testimonial-shell" data-bs-ride="carousel" data-animate="fade-up">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote>"The projects felt like real client work. I finished with a portfolio and confidence for interviews."</blockquote>
+          <div class="testimonial-person">Aarav Mehta, Frontend Developer</div>
+        </div>
+        <div class="carousel-item">
+          <blockquote>"The dashboard kept me honest, and the mentor reviews helped me fix gaps quickly."</blockquote>
+          <div class="testimonial-person">Nisha Patel, Data Analyst</div>
+        </div>
+        <div class="carousel-item">
+          <blockquote>"It feels polished, serious, and encouraging. Exactly what I needed after work hours."</blockquote>
+          <div class="testimonial-person">Rohan Sen, Product Manager</div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial"><span class="carousel-control-prev-icon"></span></button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial"><span class="carousel-control-next-icon"></span></button>
+    </div>
+  </div>
+</section>
+
+<section class="stats-band">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-6 col-lg-3"><div class="stat-card"><strong data-counter="92000">0</strong><span>Learners</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-card"><strong data-counter="180">0</strong><span>Courses</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-card"><strong data-counter="64">0</strong><span>Countries</span></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-card"><strong data-counter="96">0</strong><span>Completion score</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-5" data-animate="fade-up">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions before you start?</h2>
+        <p>Everything is designed to work now as frontend and later with Django models, auth, payments, and course content.</p>
+      </div>
+      <div class="col-lg-7" data-animate="fade-up">
+        <div class="accordion faq-accordion" id="homeFaq">
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne">Do courses include certificates?</button></h3><div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#homeFaq"><div class="accordion-body">Yes, each completed path includes a certificate-ready completion state for backend integration.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo">Can I learn on mobile?</button></h3><div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">The interface is mobile-first and optimized for phone, tablet, laptop, and large screens.</div></div></div>
+          <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree">Is this ready for Django auth?</button></h3><div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#homeFaq"><div class="accordion-body">Forms use clean names, accessible labels, CSRF-friendly structure, and reusable templates.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-panel" data-animate="zoom-in">
+      <div>
+        <span class="eyebrow">Stay Updated</span>
+        <h2>Get new course drops and study plans.</h2>
+      </div>
+      <form class="newsletter-form js-validate" novalidate>
+        <label class="visually-hidden" for="newsletterEmail">Email address</label>
+        <input id="newsletterEmail" type="email" name="email" placeholder="you@example.com" required>
+        <button class="btn btn-dark ripple-btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+{% endblock %}

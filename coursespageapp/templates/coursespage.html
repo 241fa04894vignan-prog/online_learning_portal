@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+</head>
+<body>
+
+    <header>
+        <h1>CRT Courses</h1>
+    </header>
+
+    <section class="course-container">
+
+        <div class="course-card">
+            <h2>Python Programming</h2>
+            <p>Learn Python from basics to advanced concepts.</p>
+            <button onclick="showMessage('Python Programming')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <h2>Java Programming</h2>
+            <p>Master Java for placements and projects.</p>
+            <button onclick="showMessage('Java Programming')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <h2>Web Development</h2>
+            <p>HTML, CSS, JavaScript and Django full stack.</p>
+            <button onclick="showMessage('Web Development')">
+                Enroll Now
+            </button>
+        </div>
+
+        <div class="course-card">
+            <h2>Data Structures</h2>
+            <p>Prepare for coding interviews and placements.</p>
+            <button onclick="showMessage('Data Structures')">
+                Enroll Now
+            </button>
+        </div>
+
+    </section>
+
+    <script src="{% static 'js/courses.js' %}"></script>
+
+</body>
+</html>

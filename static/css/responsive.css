@@ -1,0 +1,151 @@
+@media (max-width: 1199.98px) {
+  .hero-card-top { left: 14px; }
+  .hero-card-bottom { right: 14px; }
+  .catalog-toolbar { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin-top: 14px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .hero-section .min-vh-100 {
+    min-height: auto !important;
+    padding: 150px 0 70px;
+  }
+
+  .hero-visual,
+  .hero-visual > img {
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-visual > img { aspect-ratio: 4 / 3; }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .newsletter-panel,
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar {
+    position: static;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .dashboard-sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 { font-size: 2.55rem; }
+
+  .section-pad {
+    padding: 70px 0;
+  }
+
+  .hero-trust,
+  .learn-grid,
+  .reset-steps,
+  .social-login {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    position: static;
+    margin-top: 14px;
+    max-width: none;
+  }
+
+  .newsletter-form,
+  .newsletter-mini,
+  .footer-bottom,
+  .rating-line {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .newsletter-form input {
+    min-width: 0;
+  }
+
+  .testimonial-shell {
+    padding: 34px 20px;
+  }
+
+  .inner-hero,
+  .course-detail-hero {
+    padding: 125px 0 58px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instructor-profile {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .otp-grid {
+    grid-template-columns: repeat(4, minmax(44px, 1fr));
+  }
+
+  .dashboard-main {
+    padding: 22px 14px;
+  }
+
+  .dashboard-sidebar nav {
+    grid-template-columns: 1fr;
+  }
+
+  .enrolled-course {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .enrolled-course .icon-btn {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .auth-card,
+  .reset-flow,
+  .content-panel,
+  .newsletter-panel {
+    padding: 22px;
+  }
+
+  .hero-actions .btn,
+  .nav-actions .btn {
+    width: 100%;
+  }
+
+  .filter-pills button {
+    flex: 1 1 auto;
+  }
+
+  .chart-placeholder {
+    gap: 8px;
+    padding: 14px;
+  }
+}

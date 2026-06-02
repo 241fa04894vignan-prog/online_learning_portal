@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>CRT Dashboard</h2>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/courses/">Courses</a></li>
+            <li><a href="/quiz/">Quiz</a></li>
+            <li><a href="/result/">Results</a></li>
+            <li><a href="/login/">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <header>
+            <h1>Welcome to Dashboard</h1>
+        </header>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>Total Courses</h2>
+                <p id="courses">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Completed Quizzes</h2>
+                <p id="quizzes">0</p>
+            </div>
+
+            <div class="card">
+                <h2>Total Score</h2>
+                <p id="score">0</p>
+            </div>
+
+        </div>
+
+        <button onclick="updateDashboard()">
+            Refresh Dashboard
+        </button>
+
+    </div>
+
+    <script src="{% static 'js/dashboard.js' %}"></script>
+
+</body>
+</html>

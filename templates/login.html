@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Log in | LearnSphere{% endblock %}
+{% block content %}
+<section class="auth-section animated-gradient">
+  <div class="auth-bg-shape shape-one"></div>
+  <div class="auth-bg-shape shape-two"></div>
+  <div class="container">
+    <div class="auth-card glass-card" data-animate="zoom-in">
+      <div class="auth-header">
+        <span class="brand-icon mx-auto"><i class="fa-solid fa-graduation-cap"></i></span>
+        <h1>Welcome back</h1>
+        <p>Continue your learning streak today.</p>
+      </div>
+      <form class="js-validate auth-form" novalidate>
+        <div class="form-floating">
+          <input type="email" class="form-control" id="loginEmail" name="email" placeholder="name@example.com" required>
+          <label for="loginEmail">Email address</label>
+          <div class="invalid-feedback">Enter a valid email address.</div>
+        </div>
+        <div class="password-field">
+          <div class="form-floating">
+            <input type="password" class="form-control" id="loginPassword" name="password" placeholder="Password" required minlength="8">
+            <label for="loginPassword">Password</label>
+            <div class="invalid-feedback">Password must be at least 8 characters.</div>
+          </div>
+          <button class="toggle-password" type="button" data-target="loginPassword" aria-label="Show password"><i class="fa-regular fa-eye"></i></button>
+        </div>
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="rememberMe" name="remember">
+            <label class="form-check-label" for="rememberMe">Remember me</label>
+          </div>
+          <a href="{% url 'forgot_password' %}" class="text-link">Forgot password?</a>
+        </div>
+        <button class="btn btn-gradient w-100 ripple-btn" type="submit">Log in</button>
+      </form>
+      <div class="divider"><span>or continue with</span></div>
+      <div class="social-login">
+        <button type="button"><i class="fa-brands fa-google"></i> Google</button>
+        <button type="button"><i class="fa-brands fa-github"></i> GitHub</button>
+      </div>
+      <p class="auth-switch">New here? <a href="{% url 'signup' %}">Create an account</a></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

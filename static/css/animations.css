@@ -1,0 +1,49 @@
+[data-animate] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-animate="zoom-in"] {
+  transform: scale(.94);
+}
+
+[data-animate="zoom-in"].is-visible {
+  transform: scale(1);
+}
+
+[data-animate="slide-up"] {
+  transform: translateY(34px);
+}
+
+.floating {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes bounceDot {
+  to { transform: translateY(-12px); opacity: .55; }
+}
+
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(.88); }
+  to { opacity: 1; transform: scale(1); }
+}

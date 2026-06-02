@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% block title %}Course Details | LearnSphere{% endblock %}
+{% block content %}
+<section class="course-detail-hero">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-7" data-animate="fade-up">
+        <span class="eyebrow">Development Path</span>
+        <h1>Full Stack Django Developer</h1>
+        <p>Master modern frontend, Django templates, authentication-ready forms, APIs, deployment basics, and portfolio projects.</p>
+        <div class="rating-line"><span><i class="fa-solid fa-star"></i> 4.9</span><span>18,420 students</span><span>Updated May 2026</span></div>
+      </div>
+      <div class="col-lg-5" data-animate="zoom-in">
+        <div class="preview-card"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80" alt="Online course preview"><button class="play-btn" type="button" aria-label="Play course preview"><i class="fa-solid fa-play"></i></button></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="content-panel" data-animate="fade-up">
+          <h2>What you will learn</h2>
+          <div class="learn-grid">
+            <span><i class="fa-solid fa-check"></i> Build responsive Django templates</span>
+            <span><i class="fa-solid fa-check"></i> Design production-level Bootstrap pages</span>
+            <span><i class="fa-solid fa-check"></i> Connect UI states to future backend logic</span>
+            <span><i class="fa-solid fa-check"></i> Ship a polished portfolio project</span>
+          </div>
+        </div>
+        <div class="content-panel" data-animate="fade-up">
+          <h2>Instructor</h2>
+          <div class="instructor-profile"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Daniel Kim"><div><h3>Daniel Kim</h3><p>Cloud architect and full-stack mentor with 12 years of production engineering experience.</p><span><i class="fa-solid fa-award"></i> 35k students taught</span></div></div>
+        </div>
+        <div class="content-panel" data-animate="fade-up">
+          <h2>Curriculum</h2>
+          <div class="accordion faq-accordion" id="curriculum">
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#moduleOne">Module 1: Frontend Foundations</button></h3><div id="moduleOne" class="accordion-collapse collapse show" data-bs-parent="#curriculum"><div class="accordion-body">Semantic HTML, CSS architecture, Bootstrap layout, accessibility, and responsive patterns.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#moduleTwo">Module 2: Django Templates</button></h3><div id="moduleTwo" class="accordion-collapse collapse" data-bs-parent="#curriculum"><div class="accordion-body">Template inheritance, includes, static files, forms, auth-ready structure, and reusable components.</div></div></div>
+            <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#moduleThree">Module 3: Capstone Project</button></h3><div id="moduleThree" class="accordion-collapse collapse" data-bs-parent="#curriculum"><div class="accordion-body">Build a complete learning portal dashboard, course catalog, and polished user journey.</div></div></div>
+          </div>
+        </div>
+        <div class="content-panel" data-animate="fade-up">
+          <h2>Student reviews</h2>
+          <div class="review-card"><strong>Priya S.</strong><span><i class="fa-solid fa-star"></i> 5.0</span><p>Clear lessons, polished assignments, and a dashboard that kept me motivated.</p></div>
+          <div class="review-card"><strong>Marcus L.</strong><span><i class="fa-solid fa-star"></i> 4.8</span><p>The Django template workflow finally clicked after this course.</p></div>
+        </div>
+      </div>
+      <aside class="col-lg-4">
+        <div class="pricing-card glass-card sticky-lg-top" data-animate="slide-up">
+          <span class="price">$59</span>
+          <p>Lifetime access, certificate, downloadable resources, and mentor Q&A.</p>
+          <button class="btn btn-gradient w-100 ripple-btn" type="button">Enroll now</button>
+          <button class="btn btn-outline-dark w-100 mt-2" type="button">Add to wishlist</button>
+          <ul><li><i class="fa-solid fa-video"></i> 54 lessons</li><li><i class="fa-solid fa-clock"></i> 32 hours</li><li><i class="fa-solid fa-certificate"></i> Certificate</li></ul>
+        </div>
+      </aside>
+    </div>
+    <div class="section-heading mt-5" data-animate="fade-up"><span class="eyebrow">Related</span><h2>Continue exploring</h2></div>
+    <div class="row g-4">
+      <div class="col-md-6"><article class="mini-course"><h3>Modern Frontend Engineering</h3><span>$52</span></article></div>
+      <div class="col-md-6"><article class="mini-course"><h3>Python Data Analytics</h3><span>$69</span></article></div>
+    </div>
+  </div>
+</section>
+{% endblock %}

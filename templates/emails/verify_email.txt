@@ -1,0 +1,6 @@
+Hello {{ user.get_full_name|default:user.username }},
+
+Please verify your Online Learning Portal account:
+{{ verification_url }}
+
+If you did not create this account, you can ignore this email.

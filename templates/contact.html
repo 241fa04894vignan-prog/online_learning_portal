@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Contact | LearnSphere{% endblock %}
+{% block content %}
+<section class="inner-hero">
+  <div class="container" data-animate="fade-up">
+    <span class="eyebrow">Contact</span>
+    <h1>Talk to our learning support team.</h1>
+    <p>Questions about courses, certificates, cohorts, or partnerships? Send a message.</p>
+  </div>
+</section>
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-7">
+        <form class="contact-form content-panel js-validate" novalidate data-animate="fade-up">
+          <div class="row g-3">
+            <div class="col-md-6"><div class="form-floating"><input type="text" class="form-control" id="contactName" name="name" placeholder="Name" required><label for="contactName">Name</label><div class="invalid-feedback">Enter your name.</div></div></div>
+            <div class="col-md-6"><div class="form-floating"><input type="email" class="form-control" id="contactEmail" name="email" placeholder="Email" required><label for="contactEmail">Email</label><div class="invalid-feedback">Enter a valid email.</div></div></div>
+            <div class="col-12"><div class="form-floating"><input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required><label for="subject">Subject</label></div></div>
+            <div class="col-12"><div class="form-floating"><textarea class="form-control message-input" id="message" name="message" placeholder="Message" required minlength="10"></textarea><label for="message">Message</label><div class="invalid-feedback">Write at least 10 characters.</div></div></div>
+          </div>
+          <button class="btn btn-gradient mt-4 ripple-btn" type="submit">Send message</button>
+          <div class="alert alert-success mt-3 d-none form-success" role="alert">Message sent successfully.</div>
+        </form>
+      </div>
+      <div class="col-lg-5">
+        <div class="content-panel h-100" data-animate="slide-up">
+          <h2>Find us</h2>
+          <div class="map-placeholder"><i class="fa-solid fa-map-location-dot"></i><span>Google Map integration area</span></div>
+          <div class="contact-links">
+            <a href="#"><i class="fa-solid fa-envelope"></i> hello@learnsphere.com</a>
+            <a href="#"><i class="fa-solid fa-phone"></i> +91 98765 43210</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

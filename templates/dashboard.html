@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard | LearnSphere{% endblock %}
+{% block content %}
+<section class="dashboard-layout">
+  <aside class="dashboard-sidebar">
+    <div class="profile-mini"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=180&q=80" alt="Student profile"><div><strong>Ananya Rao</strong><span>Frontend Track</span></div></div>
+    <nav aria-label="Dashboard navigation">
+      <a class="active" href="#"><i class="fa-solid fa-table-columns"></i> Overview</a>
+      <a href="#"><i class="fa-solid fa-book-open"></i> My courses</a>
+      <a href="#"><i class="fa-solid fa-chart-simple"></i> Progress</a>
+      <a href="#"><i class="fa-solid fa-bell"></i> Notifications</a>
+      <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+      <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+  </aside>
+  <section class="dashboard-main">
+    <div class="dashboard-header" data-animate="fade-up">
+      <div><span class="eyebrow">Student Dashboard</span><h1>Welcome back, Ananya</h1></div>
+      <button class="btn btn-gradient ripple-btn" type="button">Resume learning</button>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="progress-card"><i class="fa-solid fa-fire"></i><strong>18 days</strong><span>Learning streak</span></div></div>
+      <div class="col-md-4"><div class="progress-card"><i class="fa-solid fa-circle-play"></i><strong>7</strong><span>Active courses</span></div></div>
+      <div class="col-md-4"><div class="progress-card"><i class="fa-solid fa-trophy"></i><strong>12</strong><span>Certificates</span></div></div>
+    </div>
+    <div class="row g-4 mt-1">
+      <div class="col-xl-8">
+        <div class="content-panel">
+          <div class="panel-title"><h2>Enrolled courses</h2><a href="{% url 'courses' %}">Browse more</a></div>
+          <div class="enrolled-course"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=280&q=80" alt="Django course"><div><h3>Full Stack Django Developer</h3><div class="progress"><div class="progress-bar progress-72"></div></div><span>72% complete</span></div><button class="icon-btn" type="button" aria-label="Open course"><i class="fa-solid fa-arrow-right"></i></button></div>
+          <div class="enrolled-course"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=280&q=80" alt="Data analytics course"><div><h3>Python Data Analytics</h3><div class="progress"><div class="progress-bar progress-48"></div></div><span>48% complete</span></div><button class="icon-btn" type="button" aria-label="Open course"><i class="fa-solid fa-arrow-right"></i></button></div>
+        </div>
+        <div class="content-panel mt-4">
+          <h2>Learning analytics</h2>
+          <div class="chart-placeholder"><div class="bar bar-42"></div><div class="bar bar-68"></div><div class="bar bar-52"></div><div class="bar bar-82"></div><div class="bar bar-74"></div><div class="bar bar-90"></div></div>
+        </div>
+      </div>
+      <div class="col-xl-4">
+        <div class="content-panel">
+          <h2>Notifications</h2>
+          <div class="notification-item"><i class="fa-solid fa-calendar-check"></i><div><strong>Mentor session</strong><span>Today at 6:00 PM</span></div></div>
+          <div class="notification-item"><i class="fa-solid fa-clipboard-check"></i><div><strong>Assignment reviewed</strong><span>Django templates project</span></div></div>
+          <div class="notification-item"><i class="fa-solid fa-gift"></i><div><strong>New course unlocked</strong><span>Advanced APIs</span></div></div>
+        </div>
+        <div class="content-panel profile-panel mt-4">
+          <h2>Profile</h2>
+          <p>Frontend learner preparing for Django full-stack roles.</p>
+          <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Django</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+{% endblock %}

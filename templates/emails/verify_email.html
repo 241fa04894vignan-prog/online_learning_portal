@@ -1,0 +1,4 @@
+<p>Hello {{ user.get_full_name|default:user.username }},</p>
+<p>Please verify your Online Learning Portal account using this secure link:</p>
+<p><a href="{{ verification_url }}">{{ verification_url }}</a></p>
+<p>If you did not create this account, you can ignore this email.</p>

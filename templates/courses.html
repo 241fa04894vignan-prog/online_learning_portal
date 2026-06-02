@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %}Courses | LearnSphere{% endblock %}
+{% block content %}
+<section class="inner-hero">
+  <div class="container" data-animate="fade-up">
+    <span class="eyebrow">Course Catalog</span>
+    <h1>Find the right course for your next career move.</h1>
+    <p>Search by topic, filter by category, and compare highly rated practical courses.</p>
+  </div>
+</section>
+<section class="section-pad pt-4">
+  <div class="container">
+    <div class="catalog-toolbar glass-card" data-animate="fade-up">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="courseSearch" placeholder="Search courses, skills, or instructors" aria-label="Search courses"></div>
+      <div class="filter-pills" role="group" aria-label="Course categories">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="development">Development</button>
+        <button data-filter="data">Data</button>
+        <button data-filter="design">Design</button>
+        <button data-filter="business">Business</button>
+      </div>
+    </div>
+    <div class="row g-4 mt-2 course-grid" id="courseGrid">
+      <div class="col-md-6 col-xl-4 course-item" data-category="development" data-title="full stack django web development">
+        <article class="course-card"><span class="price-badge">$59</span><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Coding laptop"><div class="course-body"><div class="course-meta"><span>Development</span><span><i class="fa-solid fa-star"></i> 4.9</span></div><h3>Full Stack Django Developer</h3><p>Build production-ready apps with Django, Bootstrap, auth flows, and APIs.</p><div class="course-footer"><span>12 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+      <div class="col-md-6 col-xl-4 course-item" data-category="data" data-title="python data analytics sql dashboards">
+        <article class="course-card"><span class="price-badge">$69</span><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data dashboard"><div class="course-body"><div class="course-meta"><span>Data</span><span><i class="fa-solid fa-star"></i> 4.8</span></div><h3>Python Data Analytics</h3><p>Clean data, write SQL, build dashboards, and explain insights clearly.</p><div class="course-footer"><span>10 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+      <div class="col-md-6 col-xl-4 course-item" data-category="design" data-title="ux research product design figma">
+        <article class="course-card"><span class="price-badge">$45</span><img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=900&q=80" alt="Design desk"><div class="course-body"><div class="course-meta"><span>Design</span><span><i class="fa-solid fa-star"></i> 4.7</span></div><h3>UX Research and Product Design</h3><p>Research, wireframe, prototype, test, and present polished product work.</p><div class="course-footer"><span>8 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+      <div class="col-md-6 col-xl-4 course-item" data-category="business" data-title="digital marketing growth strategy">
+        <article class="course-card"><span class="price-badge">$39</span><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Marketing team"><div class="course-body"><div class="course-meta"><span>Business</span><span><i class="fa-solid fa-star"></i> 4.6</span></div><h3>Growth Marketing Strategy</h3><p>Campaign planning, landing pages, analytics, retention, and experiments.</p><div class="course-footer"><span>6 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+      <div class="col-md-6 col-xl-4 course-item" data-category="development" data-title="react frontend bootstrap javascript">
+        <article class="course-card"><span class="price-badge">$52</span><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80" alt="Frontend code"><div class="course-body"><div class="course-meta"><span>Development</span><span><i class="fa-solid fa-star"></i> 4.8</span></div><h3>Modern Frontend Engineering</h3><p>Responsive UI systems, Bootstrap 5, JavaScript patterns, and accessibility.</p><div class="course-footer"><span>9 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+      <div class="col-md-6 col-xl-4 course-item" data-category="data" data-title="machine learning ai foundations">
+        <article class="course-card"><span class="price-badge">$79</span><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="AI concept"><div class="course-body"><div class="course-meta"><span>Data</span><span><i class="fa-solid fa-star"></i> 4.9</span></div><h3>AI and Machine Learning Foundations</h3><p>Models, evaluation, prompt workflows, and practical machine learning projects.</p><div class="course-footer"><span>12 weeks</span><a href="{% url 'course_details' %}">Details</a></div></div></article>
+      </div>
+    </div>
+    <div class="empty-state d-none" id="courseEmpty"><i class="fa-regular fa-folder-open"></i><h2>No courses found</h2><p>Try another keyword or category.</p></div>
+  </div>
+</section>
+{% endblock %}

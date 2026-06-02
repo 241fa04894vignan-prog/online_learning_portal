@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRT Class Portal</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2>CRT CLASS</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Welcome to CRT Class Portal</h1>
+
+            <p>
+                Learn Programming, Aptitude, Web Development,
+                Data Structures and Placement Training.
+            </p>
+
+            <button class="btn">Get Started</button>
+        </div>
+
+    </section>
+
+    <!-- Courses -->
+    <section class="courses">
+
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Learn Python, Java, C and more.</p>
+            </div>
+
+            <div class="card">
+                <h3>Aptitude</h3>
+                <p>Practice aptitude questions daily.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mock Tests</h3>
+                <p>Attend quizzes and placement tests.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 CRT Class Project</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

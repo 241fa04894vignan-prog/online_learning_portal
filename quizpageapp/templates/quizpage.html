@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <h1>CRT Quiz</h1>
+
+        <div class="question-box">
+
+            <h2>
+                1. Which language is used for Django?
+            </h2>
+
+            <div class="options">
+
+                <label>
+                    <input type="radio" name="q1" value="Java">
+                    Java
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="Python">
+                    Python
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="C">
+                    C
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="PHP">
+                    PHP
+                </label>
+
+            </div>
+
+        </div>
+
+        <button onclick="checkAnswer()">
+            Submit Answer
+        </button>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="{% static 'js/quiz.js' %}"></script>
+
+</body>
+</html>
