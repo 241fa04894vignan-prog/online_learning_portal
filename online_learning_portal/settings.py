@@ -98,12 +98,8 @@ AUTH_USER_MODEL = 'accounts.User'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'online_learning_portal',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST': 'host.docker.internal',
-        'POST': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
